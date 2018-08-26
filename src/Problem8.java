@@ -36,6 +36,7 @@ public class Problem8 {
             }
             if (temp > max) { // if the number is bigger than the previously fount big number
                 max = temp; // replace them
+
             }
         }
         System.out.println(max);
