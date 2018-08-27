@@ -9,13 +9,13 @@
  */
 public class Problem9 {
     public Problem9() {
-        for (int i = 1; i < 1000; i++) {
+        for (int i = 1; i < 1000; i++) { // the three numbers are all initiated from one and each is smaller than the next
             for (int j = i; j < 1000; j++) {
                 for (int k = j; k < 1000; k++) {
-                    if ((i + j + k) == 1000) {
-                        if ((Math.pow(i, 2) + Math.pow(j, 2) == Math.pow(k, 2))) {
+                    if ((i + j + k) == 1000) { //if the summation is 1000 (order must be maintained since summation takes less processing than power)
+                        if ((Math.pow(i, 2) + Math.pow(j, 2) == Math.pow(k, 2))) { //  thr rest of the formula shall match
                             System.out.println(i + " " + j + " " + k);
-                            System.out.println(i*j*k);
+                            System.out.println(i * j * k);
                         }
                     }
                 }
